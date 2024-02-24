@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/navigation-menu"
  
 
-export default function MainNav() {
+export function MainNav() {
   return (
     <div className="hidden md:flex">
       <NavigationMenu>

@@ -1,5 +1,6 @@
-import MainNav from "./main-nav";
+import { MainNav } from "./main-nav";
 import Image from "next/image";
+import { MobileNav } from "./mobile-nav";
 
 export default function SiteHeader() {
   return (
@@ -12,6 +13,7 @@ export default function SiteHeader() {
         className="max-w-48"
         />
       <MainNav />
+      <MobileNav />
     </div>
   )
 }
