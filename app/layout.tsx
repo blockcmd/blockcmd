@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SiteFooter from "@/components/site-footer";
@@ -42,6 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script defer data-domain="blockcmd.com" src="https://analytics.pyhash.com/js/script.js"></Script>
       <body className={inter.className}>
         <main className="flex flex-col p-8 md:p-16 lg:p-24 items-center">
           <div className="max-w-5xl">
