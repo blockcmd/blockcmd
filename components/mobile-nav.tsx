@@ -65,7 +65,70 @@ export function MobileNav() {
           ⌘
           <span className="font-bold">BlockCMD</span>
         </MobileLink>
-
+        <div className="flex flex-col space-y-3 pt-6">
+          <h4 className="font-medium">Products</h4>
+          <MobileLink 
+            href="/driver" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            Driver
+          </MobileLink>
+          <MobileLink 
+            href="/driver" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            Scans
+          </MobileLink>
+          <MobileLink 
+            href="/driver" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            Cache
+          </MobileLink>
+          <MobileLink 
+            href="/driver" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            Port
+          </MobileLink>
+        </div>
+        <div className="flex flex-col space-y-3 pt-6">
+          <h4 className="font-medium">Resources</h4>
+          <MobileLink 
+            href="/blog" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            Blog
+          </MobileLink>
+          <MobileLink 
+            href="/changelog" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            Changelog
+          </MobileLink>
+          <MobileLink 
+            href="/faqs" 
+            onOpenChange={setOpen}
+            className="text-muted-foreground"
+          >
+            FAQs
+          </MobileLink>
+        </div>
+        <div className="flex flex-col space-y-3 pt-6">
+          <MobileLink 
+            href="/contributors" 
+            onOpenChange={setOpen}
+            className="font-medium"
+          >
+            Contributors
+          </MobileLink>
+        </div>
       </SheetContent>
     </Sheet>
   )
