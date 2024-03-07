@@ -23,14 +23,17 @@ export function MainNav() {
             <NavigationMenuTrigger>Products</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[300px] lg:w-[300px]">
-                <ListItem href="/portfolio" title="Portfolio">
-                  Manage your on-chain assets and positions.
+                <ListItem href="/driver" title="Driver">
+                  Read and write to smart contracts
                 </ListItem>
-                <ListItem href="/console" title="Console">
-                  Read and write smart contracts on the blockchain.
+                <ListItem href="/scans" title="Scans">
+                  Library to query all the block explorers
                 </ListItem>
-                <ListItem href="/payment" title="Payment">
-                  Pay, get paid in crypto and offramp.
+                <ListItem href="/cache" title="Cache">
+                  Pay, get paid in crypto and offramp
+                </ListItem>
+                <ListItem href="/port" title="Port">
+                  Manage your crypto assets
                 </ListItem>
               </ul>
             </NavigationMenuContent>
@@ -52,12 +55,19 @@ export function MainNav() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="https://twitter.com/blockcmdHQ" legacyBehavior passHref>
+            <Link href="/contributors" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Twitter
+                Contributors
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          {/* <NavigationMenuItem>
+            <a href="https://twitter.com/blockcmdHQ" target="_blank">
+              <NavigationMenuLink>
+                𝕏
+              </NavigationMenuLink>
+            </a>
+          </NavigationMenuItem> */}
         </NavigationMenuList>
       </NavigationMenu>
     </div>
