@@ -17,16 +17,16 @@ export default function SiteFooter() {
             <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight mb-6">Here are some links</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div className="flex flex-col gap-1">
-                <h3 className="scroll-m-20 text-lg font-semibold tracking-tight mb-2">Team</h3>
+                <h3 className="scroll-m-20 text-lg font-semibold tracking-tight mb-2 -mt-2">Team</h3>
                 <Link href="/our-story" className="text-gray-400 text-sm">Our story</Link>
                 <Link href="/support" className="text-gray-400 text-sm">Support</Link>
-                <Link href="/press" className="text-gray-400 text-sm">Press</Link>
+                <Link href="/contributors" className="text-gray-400 text-sm">Contributors</Link>
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="scroll-m-20 text-lg font-semibold tracking-tight mb-2">Legal</h3>
                 <Link href="/privacy" className="text-gray-400 text-sm">Privacy policy</Link>
-                <Link href="/refund" className="text-gray-400 text-sm">Refund policy</Link>
                 <Link href="/community-rules" className="text-gray-400 text-sm">Community rules</Link>
+                <Link href="/company-info" className="text-gray-400 text-sm">Company info</Link>
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="scroll-m-20 text-lg font-semibold tracking-tight mb-2">Job board</h3>

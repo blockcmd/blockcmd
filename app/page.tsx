@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProductCard from "@/components/product-card";
 import { Button } from "@/components/ui/button";
 
