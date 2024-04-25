@@ -23,7 +23,7 @@ export function MainNav() {
             <NavigationMenuTrigger>Products</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[300px] lg:w-[300px]">
-                <ListItem href="/driver" title="Driver">
+                <ListItem href="/inspect" title="Inspect">
                   Read and write to smart contracts
                 </ListItem>
                 <ListItem href="/scans" title="Scans">

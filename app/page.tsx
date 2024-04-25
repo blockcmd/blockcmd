@@ -6,10 +6,10 @@ export default function Home() {
   const productData = [
     {
       id: 1,
-      title: "Driver",
+      title: "Inspect",
       description: "Read and write to smart contracts",
-      image: "/bcmd-driver.png",
-      url: "/driver"
+      image: "/bcmd-inspect.png",
+      url: "/inspect"
     },
     {
       id: 2,
