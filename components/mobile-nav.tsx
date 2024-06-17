@@ -13,6 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from "next/image"
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
@@ -57,77 +58,20 @@ export function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="pr-0">
-        <MobileLink
-          href="/"
+        <h3
           className="flex items-center"
-          onOpenChange={setOpen}
         >
           ⌘
           <span className="font-bold">BlockCMD</span>
-        </MobileLink>
+        </h3>
         <div className="flex flex-col space-y-3 pt-6">
-          <h4 className="font-medium">Products</h4>
-          <MobileLink 
-            href="/driver" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
+          <a 
+            href="https://github.com/blockcmd"
+            target="_blank"
+            className="font-medium flex flex-row gap-2"
           >
-            Driver
-          </MobileLink>
-          <MobileLink 
-            href="/driver" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
-          >
-            Scans
-          </MobileLink>
-          <MobileLink 
-            href="/driver" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
-          >
-            Cache
-          </MobileLink>
-          <MobileLink 
-            href="/driver" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
-          >
-            Port
-          </MobileLink>
-        </div>
-        <div className="flex flex-col space-y-3 pt-6">
-          <h4 className="font-medium">Resources</h4>
-          <MobileLink 
-            href="/blog" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
-          >
-            Blog
-          </MobileLink>
-          <MobileLink 
-            href="/changelog" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
-          >
-            Changelog
-          </MobileLink>
-          <MobileLink 
-            href="/faqs" 
-            onOpenChange={setOpen}
-            className="text-muted-foreground"
-          >
-            FAQs
-          </MobileLink>
-        </div>
-        <div className="flex flex-col space-y-3 pt-6">
-          <MobileLink 
-            href="/contributors" 
-            onOpenChange={setOpen}
-            className="font-medium"
-          >
-            Contributors
-          </MobileLink>
+            GitHub <Image src="/github.svg" alt="GitHub" width={16} height={16} />
+          </a>
         </div>
       </SheetContent>
     </Sheet>

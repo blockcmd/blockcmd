@@ -1,9 +1,9 @@
-"use client"
- 
-import * as React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { cn } from "@/lib/utils"
+"use client";
+
+import * as React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,8 +12,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
- 
+} from "@/components/ui/navigation-menu";
 
 export function MainNav() {
   return (
@@ -21,18 +20,21 @@ export function MainNav() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <a href="https://github.com/blockcmd" target="_blank">
-              <NavigationMenuLink className="flex flex-row gap-2 border-2 border-primary rounded-md p-2">
-                GitHub <Image src="/github.svg" alt="GitHub" width={16} height={16} />
-              </NavigationMenuLink>
+            <a
+              className="flex flex-row gap-2 border-2 border-primary rounded-md p-2"
+              href="https://github.com/blockcmd"
+              target="_blank"
+            >
+              GitHub{" "}
+              <Image src="/github.svg" alt="GitHub" width={16} height={16} />
             </a>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
-  )
+  );
 }
- 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
@@ -55,6 +57,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
