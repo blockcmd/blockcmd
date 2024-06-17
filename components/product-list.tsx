@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProductCard from "@/components/product-card";
 
 export default function ProductList() {
   const productData = [
@@ -6,36 +7,44 @@ export default function ProductList() {
       id: 1,
       title: "Inspect",
       description: "Read and write to smart contracts",
-      image: "/bcmd-inspect.png",
       url: "/inspect"
     },
     {
       id: 2,
       title: "Scans",
       description: "Library to query all the block explorers",
-      image: "/bcmd-scans.png",
       url: "/scans"
     },
     {
       id: 3,
-      title: "Cache",
+      title: "Commerce",
       description: "Pay, get paid in crypto and offramp",
-      image: "/bcmd-cache.png",
-      url: "/cache"
+      url: "/commerce"
     },
     {
       id: 4,
-      title: "Port",
+      title: "Portfolio Manager",
       description: "Manage your crypto assets",
-      image: "/bcmd-port.png",
-      url: "/port"
+      url: "/portfolio-manager"
     }
   ]
-  
-  return (
-    <div>
-      <h1>OSS Products</h1>
 
-    </div>
+  return (
+    <>
+      <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">OSS Products</h2>
+      <div className="text-left">
+        {
+          productData.map((product) => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              description={product.description}
+              url={product.url}
+            />
+          ))
+        }
+      </div>
+
+    </>
   )
 }

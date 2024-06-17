@@ -20,54 +20,12 @@ export function MainNav() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Products</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[300px] lg:w-[300px]">
-                <ListItem href="/inspect" title="Inspect">
-                  Read and write to smart contracts
-                </ListItem>
-                <ListItem href="/scans" title="Scans">
-                  Library to query all the block explorers
-                </ListItem>
-                <ListItem href="/cache" title="Cache">
-                  Pay, get paid in crypto and offramp
-                </ListItem>
-                <ListItem href="/port" title="Port">
-                  Manage your crypto assets
-                </ListItem>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[300px] lg:w-[300px]">
-                  <ListItem href="/blog" title="Blog">
-                    Read the latest stories from the BlockCMD team.
-                  </ListItem>
-                  <ListItem href="/changelog" title="Changelog">
-                    Check out what&rsquo;s new in the latest release.
-                  </ListItem>
-                  <ListItem href="/faqs" title="FAQs">
-                    Troubleshoot common problems and find solutions.
-                  </ListItem>
-                </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/contributors" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Contributors
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          {/* <NavigationMenuItem>
             <a href="https://twitter.com/blockcmdHQ" target="_blank">
               <NavigationMenuLink>
                 𝕏
               </NavigationMenuLink>
             </a>
-          </NavigationMenuItem> */}
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
