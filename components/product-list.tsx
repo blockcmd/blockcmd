@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ProductList() {
 
@@ -14,15 +15,12 @@ export default function ProductList() {
           <p className="leading-7">Read/write to smart contracts and simulate transactions</p>
         </div>
         <div className="flex flex-col gap-2 pt-4">
-          <div className="flex flex-row gap-4 items-center">
-            <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">Scans</h3>
-            <div className="flex flex-row gap-4">
-              <a href="https://github.com/blockcmd/scans-ts" target="_blank" className="text-blue-600 w-fit leading-7">TypeScript</a>
-              <a href="https://github.com/blockcmd/scans-py" target="_blank" className="text-blue-600 w-fit leading-7">Python</a>
-              <a href="https://github.com/blockcmd/scans-rs" target="_blank" className="text-blue-600 w-fit leading-7">Rust</a>
-            </div>
+          <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">Scans</h3>
+          <div className="flex flex-row gap-8">
+            <a href="https://github.com/blockcmd/scans-ts" target="_blank" className="text-blue-600 flex flex-row gap-2 w-fit leading-7"><Image src="/typescript.svg" alt="typescript" width={20} height={20} />TypeScript</a>
+            <a href="https://github.com/blockcmd/scans-py" target="_blank" className="text-blue-600 flex flex-row gap-2 w-fit leading-7"><Image src="/python.svg" alt="python" width={20} height={20} />Python</a>
+            <a href="https://github.com/blockcmd/scans-rs" target="_blank" className="text-blue-600 flex flex-row gap-2 w-fit leading-7"><Image src="/rust.svg" alt="rust" width={20} height={20} />Rust</a>
           </div>
-
           <p className="leading-7">Library to query all the block explorers</p>
         </div>
         <div className="flex flex-col gap-2 pt-4">
