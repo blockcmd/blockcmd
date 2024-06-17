@@ -1,49 +1,44 @@
-import Link from "next/link";
-import ProductCard from "@/components/product-card";
+import { ExternalLink } from 'lucide-react';
 
 export default function ProductList() {
-  const productData = [
-    {
-      id: 1,
-      title: "Inspect",
-      description: "Read/write to smart contracts and simulate transactions",
-      url: "https://github.com/blockcmd/inspect"
-    },
-    {
-      id: 2,
-      title: "Scans",
-      description: "Library to query all the block explorers",
-      url: "https://github.com/blockcmd/scans"
-    },
-    {
-      id: 3,
-      title: "Commerce",
-      description: "Pay, get paid in crypto and offramp",
-      url: false
-    },
-    {
-      id: 4,
-      title: "Portfolio Manager",
-      description: "Manage your crypto assets",
-      url: false
-    }
-  ]
 
   return (
     <>
       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">OSS Products</h2>
       <p className=" text-left leading-7 [&:not(:first-child)]:mt-6 ">BlockCMD firmly believes that open source software will change the world. We build and contribute to products that push the boundry of possiblity, even when there is no direct commercial incentive. Explore our products below.</p>
-      <div className="flex flex-col gap-4 text-left">
-        {
-          productData.map((product) => (
-            <ProductCard
-              key={product.id}
-              title={product.title}
-              description={product.description}
-              url={product.url}
-            />
-          ))
-        }
+      <div className="flex flex-col gap-4 text-left divide-y-2 divide-primary">
+        <div className="flex flex-col gap-2 pt-4">
+          <a target="_blank" className="text-blue-600 w-fit" href="https://github.com/blockcmd/inspect">
+            <h3 className="flex flex-row  items-centerscroll-m-20 text-xl font-semibold tracking-tight">Inspect <span><ExternalLink className="ml-2 w-6 h-6"/></span></h3>
+          </a>
+          <p className="leading-7">Read/write to smart contracts and simulate transactions</p>
+        </div>
+        <div className="flex flex-col gap-2 pt-4">
+          <div className="flex flex-row gap-4 items-center">
+            <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">Scans</h3>
+            <div className="flex flex-row gap-4">
+              <a href="https://github.com/blockcmd/scans-ts" target="_blank" className="text-blue-600 w-fit leading-7">TypeScript</a>
+              <a href="https://github.com/blockcmd/scans-py" target="_blank" className="text-blue-600 w-fit leading-7">Python</a>
+              <a href="https://github.com/blockcmd/scans-rs" target="_blank" className="text-blue-600 w-fit leading-7">Rust</a>
+            </div>
+          </div>
+
+          <p className="leading-7">Library to query all the block explorers</p>
+        </div>
+        <div className="flex flex-col gap-2 pt-4">
+          <div className="flex flex-row gap-2 items-center">
+            <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">Commerce</h3>
+            <p className="bg-muted-foreground w-fit text-secondary px-2 py-0 rounded-md">coming soon</p>
+          </div>
+          <p className="leading-7">Pay, get paid in crypto and offramp</p>
+        </div>
+        <div className="flex flex-col gap-2 pt-4">
+          <div className="flex flex-row gap-2 items-center">
+            <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">Portfolio Manager</h3>
+            <p className="bg-muted-foreground w-fit text-secondary px-2 py-0 rounded-md">coming soon</p>
+          </div>
+          <p className="leading-7">Manage your crypto assets on multiple chains</p>
+        </div>
       </div>
 
     </>
