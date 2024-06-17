@@ -5,7 +5,7 @@ import { MobileNav } from "./mobile-nav";
 
 export default function SiteHeader() {
   return (
-    <div className="flex flex-row justify-between w-full mb-24">
+    <div className="flex flex-row justify-between w-full mb-24 font-mono">
       <Link href="/">
         <Image
           src="/blockcmd-logo.svg"

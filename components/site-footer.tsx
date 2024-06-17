@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function SiteFooter() {
   return (
-    <footer className="flex flex-col gap-10 my-24 w-full">
+    <footer className="flex flex-col gap-10 my-24 w-full font-mono">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         <div className="flex flex-col gap-2">
           <div className="text-secondary bg-secondary-foreground p-10 rounded-xl">
