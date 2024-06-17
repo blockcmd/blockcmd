@@ -13,10 +13,6 @@ export default function Home() {
         </Button>
       </div>
       <div className="flex flex-col text-center max-w-3xl gap-4">
-        <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight">Our ethos</h2>
-        <p className="leading-7 [&:not(:first-child)]:mt-6 ">BlockCMD firmly believes that open source software will change the world. We build and contribute to products that push the boundry of possiblity, even when there is no direct commercial incentive. Explore our products below.</p>
-      </div>
-      <div className="flex flex-col text-center max-w-3xl gap-4">
         <ProductList />
       </div>
     </div>

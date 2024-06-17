@@ -2,6 +2,7 @@
  
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
@@ -20,9 +21,9 @@ export function MainNav() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <a href="https://twitter.com/blockcmdHQ" target="_blank">
-              <NavigationMenuLink>
-                𝕏
+            <a href="https://github.com/blockcmd" target="_blank">
+              <NavigationMenuLink className="flex flex-row gap-2 border-2 border-primary rounded-md p-2">
+                GitHub <Image src="/github.svg" alt="GitHub" width={16} height={16} />
               </NavigationMenuLink>
             </a>
           </NavigationMenuItem>
